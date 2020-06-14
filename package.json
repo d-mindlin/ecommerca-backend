@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,19 @@
   "homepage": "https://github.com/d-mindlin/ecommerca-backend#readme",
   "dependencies": {
     "2": "^3.0.0",
+    "bcrypt": "^5.0.0",
     "bluebird": "^3.7.2",
+    "connect-session-sequelize": "^6.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "promise": "^8.1.0",
     "sequelize": "^5.21.12"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }
